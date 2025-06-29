@@ -1,5 +1,3 @@
----
-
 # 🎤 Wciągarka Mikrofonowa – System Sterowania
 
 **Projekt demonstracyjny prezentujący możliwości wciągarki mikrofonowej sterowanej protokołem Modbus RTU.**
