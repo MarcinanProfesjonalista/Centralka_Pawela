@@ -1,3 +1,5 @@
+<img src="https://github.com/MarcinanProfesjonalista/Centralka_Pawela/blob/main/obrazy/20250629_154158.jpg" alt="Obraz 1" width="300">
+
 # 🎤 Wciągarka Mikrofonowa – System Sterowania
 
 **Projekt demonstracyjny prezentujący możliwości wciągarki mikrofonowej sterowanej protokołem Modbus RTU.**
@@ -33,6 +35,9 @@ Układ ten stanowi **centralę sterującą** dla wciągarki mikrofonowej, zaproj
 ---
 
 ## 🔌 Instrukcja użycia
+<img src="https://github.com/MarcinanProfesjonalista/Centralka_Pawela/blob/main/obrazy/centralka%20pawela%203%20(1).png" alt="Obraz 1" width="300">
+<img src="https://github.com/MarcinanProfesjonalista/Centralka_Pawela/blob/main/obrazy/centralka%20pawela%202.png" alt="Obraz 1" width="300">
+<img src="https://github.com/MarcinanProfesjonalista/Centralka_Pawela/blob/main/obrazy/OBJASNIENIA.png" alt="Obraz 1" width="300">
 
 1. **Połącz** centralę sterującą z wciągarką przy pomocy przewodu DMX.
 2. **Podłącz zasilanie** do centralki (zakres napięcia: **7V – 36V**).
