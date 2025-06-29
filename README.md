@@ -25,7 +25,7 @@ Układ ten stanowi **centralę sterującą** dla wciągarki mikrofonowej, zaproj
 | ----- | ---------------------- | --------------------------------------- |
 | `0`   | `REG_ID`               | ID urządzenia                           |
 | `1`   | `REG_ZEZWOL_NA_JAZDE`  | Zezwolenie na ruch (1 = tak, 0 = nie)   |
-| `2`   | `REG_TARGET_POSITION`  | Pozycja docelowa (liczba kroków/pulsów) |
+| `2`   | `REG_TARGET_POSITION`  | Pozycja docelowa (wysunięcie liny milimetrach) |
 | `3`   | `REG_ACTUAL_POSITION`  | Aktualna pozycja wciągarki              |
 | `4`   | `REG_LIMIT_TOP_SWITCH` | Krańcówka górna (1 = aktywna)           |
 | `5`   | `REG_LIMIT_BOT_SWITCH` | Krańcówka dolna (1 = aktywna)           |
