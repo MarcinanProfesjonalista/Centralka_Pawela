@@ -57,7 +57,7 @@ void obsluz_przyciski() {
 void przyciskiTask(void* parameter) {
   for (;;) {
     obsluz_przyciski();        // Twoja funkcja
-    vTaskDelay(30 / portTICK_PERIOD_MS);  // Odświeżanie co 30 ms
+    vTaskDelay(10 / portTICK_PERIOD_MS);  // Odświeżanie co 30 ms
   }
 }
 

@@ -1,7 +1,7 @@
 #include "WString.h"
 
 #include <WebServer.h>
-#include <WebSocketsServer.h>
+#include <WebSocketsServer.h> //by markus settler
 
 WebServer server(80);
 WebSocketsServer webSocket = WebSocketsServer(81);

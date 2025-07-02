@@ -7,17 +7,16 @@
 #include <CSE_ModbusRTU.h>
 bool modbusInitialized = false;  // Flaga inicjalizacji
 
-
-
 //===================================================================================//
 
 // You can define the serial port pins here.
-#define PIN_RS485_RX 16  //16 //Nowa płyta RX 16, tx17 en15
 #define PIN_RS485_TX 17  //17
+#define PIN_RS485_RX 16  //16 //Nowa płyta RX 16, tx17 en15
+#define PIN_RS485_EN 15
 
 #define PORT_RS485 Serial1  // The hardware serial port for the RS-485 interface
 
-RS485Class RS485(PORT_RS485, -1, 15, PIN_RS485_TX);
+RS485Class RS485(PORT_RS485, PIN_RS485_EN, -1, PIN_RS485_TX);
 CSE_ModbusRTU modbusRTU(&RS485, 0x01, "modbusRTU-0x01");
 CSE_ModbusRTU_Client modbusRTUClient(modbusRTU, "modbusRTUClient");
 
@@ -77,7 +76,7 @@ void ModbusTask(void *pvParameters) {
 
 void init_modbus_rtu() {
   //Serial1.begin(9600);
-  PORT_RS485.begin(9600, SERIAL_8N1, PIN_RS485_RX, PIN_RS485_TX);
+  PORT_RS485.begin(9600, SERIAL_8N1, PIN_RS485_TX, PIN_RS485_RX);
   RS485.begin();
   modbusRTUClient.begin();
   modbusRTUClient.setServerAddress(0x01);
